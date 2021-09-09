@@ -1,0 +1,20 @@
+@import "utils/variables";
+@import "utils/keyframes";
+@import "utils/mediaquerys";
+
+@import "base/minireset";
+@import "base/base";
+
+@import "base/typography";
+
+@import "layout/card";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/slide";
+
+@import "page/competition";
+@import "page/index";
+@import "page/team";
+@import "page/gallery";
+

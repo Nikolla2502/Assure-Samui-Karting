@@ -1,0 +1,661 @@
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* Ecrire les prorietes dans les selecteurs correspondants*/
+@media (max-width: 425px) {
+  /* pour la taille cel 425 px
+    /* proprietes CSS   */
+}
+
+@media all and (max-width: 768px) {
+  /* pour la taille tablet 768 px
+    /* proprietes CSS   */
+}
+
+@media (max-width: 1024px) {
+  /* proprietes CSS   */
+}
+
+@media (max-width: 1440px) {
+  /* proprietes CSS   */
+}
+
+@media (max-width: 2560px) {
+  /* proprietes CSS   */
+}
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: 'title';
+  src: url("/././font/Superclarendon Regular.ttf");
+}
+
+.banner {
+  font-family: 'title';
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+.card {
+  background-color: #ebebeb;
+  height: auto;
+  margin: 0 2rem 0 2rem;
+  padding-bottom: 1rem;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: auto;
+  text-shadow: 5px 5px 20px #070707;
+}
+
+.card-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.card-banner .rotaxmax {
+  background-color: white;
+  padding: 10px;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.card-banner .rotaxmax img {
+  border-radius: 15px 0;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  height: 100px;
+  margin: 10px;
+}
+
+.card-banner .rotaxmax_left {
+  border-radius: 15px 0 0 15px;
+}
+
+.card-banner .rotaxmax_right {
+  border-radius: 0 15px 15px 0;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  -webkit-box-shadow: 0px 0px 50px 50px white;
+          box-shadow: 0px 0px 50px 50px white;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  height: 7vh;
+}
+
+.header-nav ul {
+  margin-top: 10px;
+}
+
+.header-nav li {
+  display: inline;
+  margin: 2rem;
+}
+
+.card-lien-page a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px #3f3f3f;
+}
+
+.lang-choice {
+  background-color: white;
+}
+
+.lang-choice img {
+  margin-top: 10px;
+  height: 2rem;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  padding: 2px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 20px #070707;
+}
+
+h1 .first_letter {
+  color: #FCEA08;
+  font-size: 3.5rem;
+}
+
+.ask-logo img {
+  margin-top: 15px;
+  width: 158px;
+  height: 100px;
+}
+
+.ask-logo_left {
+  margin-left: 5px;
+}
+
+.ask-logo_right {
+  margin-right: 5px;
+}
+
+@media (max-width: 1024px) {
+  .ask-logo_right {
+    display: none;
+  }
+}
+
+.ask-presentation-complement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+  .ask-presentation-complement {
+    display: none;
+  }
+}
+
+.ask-presentation-complement .nation-flag img {
+  height: 60px;
+}
+
+.ask-presentation-complement h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 5px 5px 20px #070707;
+  margin: 8px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5% 3%;
+  padding: 20px 0;
+  background-color: #ebebeb;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  border-radius: 20px;
+  font-weight: bold;
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #292929;
+}
+
+footer a:hover {
+  color: black;
+  text-shadow: 1px 1px 10px;
+}
+
+img {
+  height: 25px;
+  margin-right: 8px;
+}
+
+footer figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer figure figcaption {
+  font-size: 1.3rem;
+}
+
+.contact li {
+  margin-top: 15px;
+}
+
+.partenaires li {
+  margin-top: 10px;
+}
+
+#slider {
+  height: 320px;
+  width: 100%;
+  margin-left: 20px;
+  -webkit-box-shadow: 5px 5px 25px white;
+          box-shadow: 5px 5px 25px white;
+  border-radius: 50px;
+  max-width: 320px;
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  left: 0;
+  -webkit-animation: 30s slidy infinite;
+          animation: 30s slidy infinite;
+}
+
+#slider figure img {
+  width: auto;
+  height: auto;
+  float: left;
+  margin: 0 0 0 0;
+}
+
+.card-competition {
+  margin-top: 50vh;
+}
+
+/*####################################*\
+##########  Partie team         ########
+\*####################################*/
+.card-team {
+  margin-top: 50vh;
+}
+
+.card-team-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-team-presentation {
+  font-size: 2rem;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+/*####################################*\
+########## FIN Partie team      ########
+\*####################################*/
+/*####################################*\
+##########  Partie competition  ########
+\*####################################*/
+.rotaxmax-calendar img {
+  height: 320px;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+@media (max-width: 1024px) {
+  .bira-track {
+    display: none;
+  }
+}
+
+.bira-track img {
+  height: 320px;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.card-race-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 20px;
+}
+
+.card-race-body figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card-race-body figcaption img {
+  height: 2rem;
+  position: relative;
+  top: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.card-race-body p {
+  font-size: 1.5rem;
+  width: 30%;
+  margin-left: 2rem;
+}
+
+/*####################################*\
+##########  Fin Partie competition  ####
+\*####################################*/
+/*####################################*\
+########## Partie partenaire        ####
+\*####################################*/
+.card-partenaires-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.card-partenaires-list {
+  margin-left: 20px;
+}
+
+.card-partenaires-list li {
+  margin: 10px;
+}
+
+.partners {
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+/*####################################*\
+##########  Fin Partie competition  ####
+\*####################################*/
+.card-team-page {
+  height: auto;
+  margin-top: 50vh;
+}
+
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5% 5%;
+  font-size: 1.5rem;
+}
+
+@media all and (max-width: 1024px) {
+  .team-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.team-list-part {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.team-list-part li {
+  line-height: 2rem;
+  width: 95%;
+  margin-left: 20px;
+}
+
+.team-list-part h3 {
+  font-weight: bold;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  text-align: center;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.team-pictures {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team-pictures img {
+  height: 200px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border: solid 2px #505050;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.team-pictures figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: solid 2px #505050;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.video {
+  margin: 20px auto;
+}
+
+.video iframe {
+  border: solid 2px #505050;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.gallery-pictures {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery-pictures img {
+  padding: auto;
+  height: 400px;
+  margin: 10px;
+  border: solid 2px #505050;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.gallery-pictures figcaption {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: solid 2px #505050;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+/*# sourceMappingURL=main.css.map */

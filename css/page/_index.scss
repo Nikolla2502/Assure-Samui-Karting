@@ -1,0 +1,99 @@
+
+
+/*####################################*\
+##########  Partie team         ########
+\*####################################*/
+.card-team{
+    margin-top: 50vh;
+}
+
+.card-team-body{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.card-team-presentation{
+    font-size:2rem;
+    margin-top:40px;
+    padding:30px;
+    
+    
+}
+
+
+/*####################################*\
+########## FIN Partie team      ########
+\*####################################*/
+
+/*####################################*\
+##########  Partie competition  ########
+\*####################################*/
+
+
+
+
+.rotaxmax-calendar img{
+    height:320px;
+    @include box-shadow-main;
+}
+
+.bira-track {   
+     @include desktop{
+        display: none;
+        }
+    img{
+    height:320px;
+    @include box-shadow-main;
+
+   
+}
+ }
+.card-race-body{
+    display:flex;
+    justify-content: left;
+    margin:20px;
+    figcaption{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        img{
+            height:2rem;
+            position: relative;
+            top:10px;
+            box-shadow:none;
+        }
+    }
+    p{
+        font-size:1.5rem;
+        width:30%;
+        margin-left:2rem;
+    }
+}
+
+/*####################################*\
+##########  Fin Partie competition  ####
+\*####################################*/
+
+/*####################################*\
+########## Partie partenaire        ####
+\*####################################*/
+
+
+.card-partenaires-body{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+}
+.card-partenaires-list{
+    margin-left:20px;
+    li{
+        margin:10px;
+    }
+}
+.partners{
+    font-size:1.8rem;
+    text-decoration:underline;
+}
+/*####################################*\
+##########  Fin Partie competition  ####
+\*####################################*/

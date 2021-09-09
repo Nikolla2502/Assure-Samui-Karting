@@ -1,0 +1,118 @@
+header {
+    z-index:1;
+    position:fixed;
+    width:100%;
+    top: 0px;
+    box-shadow: 0px 0px 50px 50px white;
+    
+}
+.header-nav {
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+    height: 7vh;
+    ul{
+        margin-top:10px;
+    }
+    li {
+        display:inline;
+        margin:2rem;
+        
+    }
+}
+
+.card-lien-page{
+    // margin: 20px 0px 10px 30px;
+    // padding-top:40px;
+    // padding-right:20px;
+    // position: relative;
+    // bottom: 35px;;
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        // @include box-shadow-main;
+        // padding:5px 15px 5px 15px;
+        // border-radius:15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-shadow: 5px 5px 10px rgb(63, 63, 63);
+    }
+} 
+
+.lang-choice{
+    background-color: white;
+    img{
+        margin-top:10px;
+        height:2rem;
+        @include box-shadow-main;
+    }
+}
+
+.banner{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    padding:2px 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    // color:rgb(247, 44, 44);
+    text-shadow: 5px 5px 20px rgb(7, 7, 7);
+    .first_letter{
+    color: #FCEA08;
+    font-size:3.5rem;
+    
+    }
+   
+}
+
+
+.ask-logo{
+    img{
+         margin-top:15px;
+        width:158px;
+        height:100px;
+    }
+    
+}
+.ask-logo_left{
+        // margin-right:20px;
+        margin-left:5px;
+        // @include tablet{
+        //     display: none;
+        //     }
+    }
+.ask-logo_right{
+    // margin-left:20px;
+    margin-right:5px;
+    @include desktop{
+        display: none;
+        }
+        
+}
+
+.ask-presentation-complement{
+    display: flex;
+    justify-content: center;
+            @include tablet{
+            display: none;
+            }
+    .nation-flag{
+        img{
+        height:60px;
+        }
+        
+    }
+    h2{
+    font-size:2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 5px 5px 20px rgb(7, 7, 7);
+    margin:8px;
+    }
+}

@@ -1,0 +1,46 @@
+
+/*######  essai header fixed   ####*/
+// header{
+//     position: fixed;
+//     box-shadow:20px 20px 40px white;
+// }
+
+
+
+
+
+h1{
+
+    .first_letter{
+
+    animation: flash 1.2s linear 3;
+    }
+   
+}
+.first_letter1{
+    
+    animation-delay: 0.2s;
+}
+.first_letter2{
+    
+    animation-delay: 0.4s;
+}
+.first_letter3{
+    
+    animation-delay: 0.6s;
+}
+
+@keyframes flash {
+    0%{
+        color: #fff900;
+        text-shadow:0 0 7px #fff900;
+    }
+    90% {
+        color:#484848;
+        text-shadow: none;
+    }
+    100%{
+        color: #fff900;
+        text-shadow:0 0 7px #fff900;
+    }
+  }

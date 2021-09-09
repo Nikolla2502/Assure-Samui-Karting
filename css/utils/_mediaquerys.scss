@@ -1,0 +1,54 @@
+$screen-cel: 425px;
+
+$screen-tablet: 768px;
+
+$screen-lg: 1024px;
+
+$screen-xl: 1440px;
+
+$screen-xxl: 2560px;
+@mixin cel {
+    @media (max-width: #{$screen-cel}) {
+    @content;
+    }
+}
+@mixin tablet {
+    @media all and (max-width: #{$screen-tablet}) {
+    @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$screen-lg}) {
+    @content;
+    }
+}
+
+@mixin lg_desktop {
+    @media (max-width: #{$screen-xl}) {
+    @content;
+    }
+}
+  
+@mixin xlg_desktop {
+    @media (max-width: #{$screen-xxl}) {
+    @content;
+    }
+}
+
+/* Ecrire les prorietes dans les selecteurs correspondants*/
+    @include cel{  /* pour la taille cel 425 px
+    /* proprietes CSS   */
+    }
+    @include tablet{  /* pour la taille tablet 768 px
+    /* proprietes CSS   */
+    }
+    @include desktop{
+       /* proprietes CSS   */
+    }
+    @include lg_desktop{
+       /* proprietes CSS   */
+    }
+    @include xlg_desktop{
+       /* proprietes CSS   */
+    }

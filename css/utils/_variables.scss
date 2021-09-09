@@ -1,0 +1,10 @@
+$border_color:rgb(80, 80, 80);
+$bg_color:rgb(235, 235, 235);
+$footer_color:rgb(212, 212, 212);
+
+@mixin box-shadow-main{
+    box-shadow: 0 5px 15px $border-color,inset 0 5px 15px $border-color;
+  }
+@mixin border-main{
+    border:solid 5px $border_color;
+}

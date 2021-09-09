@@ -1,0 +1,28 @@
+#slider {
+    
+    height:320px;
+    width: 100%;
+    margin-left:20px;
+    box-shadow: 5px 5px 25px white;
+    border-radius:50px;
+    max-width: 320px;
+    overflow: hidden;
+} 
+#slider figure {
+    
+    position: relative; 
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    left: 0;
+    animation: 30s slidy infinite;
+  }
+#slider figure img {
+    width: auto;
+    height: auto;
+    float: left; 
+    margin:0 0 0 0;
+
+}

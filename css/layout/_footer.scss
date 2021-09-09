@@ -1,0 +1,46 @@
+footer{
+    display:flex;
+    justify-content: space-around;
+    margin:5% 3%;
+    padding:20px 0;
+    background-color:$bg_color;
+    @include box-shadow-main;
+    // @include border-main;
+    border-radius:20px;
+    font-weight:bold;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    a{
+        text-decoration:none;
+        color:rgb(41, 41, 41);
+        &:hover{
+            color:black;
+            text-shadow:1px 1px 10px;
+        }
+    }
+}
+img{
+    height:25px;
+    margin-right:8px;
+    
+}
+footer{
+    figure{
+        display:flex;
+        flex-direction: row;
+        figcaption{
+            font-size: 1.3rem;
+        }
+    }
+}
+.contact{
+    
+    li{
+        margin-top:15px;
+    }
+}
+.partenaires{
+    li{
+        margin-top:10px;
+    }
+}

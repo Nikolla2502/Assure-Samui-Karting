@@ -1,0 +1,49 @@
+
+
+.card{
+    
+    background-color:$bg_color;
+    // border-radius:25px;
+    height: auto;
+    // @include box-shadow-main;
+    margin:0 2rem 0 2rem;
+    padding-bottom:1rem;
+    h2{
+        text-align: center;
+        font-size:2.5rem;
+        font-weight: bold;
+        margin:auto;
+        text-shadow: 5px 5px 20px rgb(7, 7, 7);
+    }
+    
+
+}
+
+
+.card-banner{
+    display:flex;
+    justify-content: space-between;
+    background-color:white;
+    @include box-shadow-main;
+    border-radius:15px;
+    margin-top:20px;
+    .rotaxmax{
+    background-color:white;
+    padding:10px;
+    @include box-shadow-main;
+        img{
+        border-radius:15px 0;
+        @include box-shadow-main;
+        height:100px;
+        margin:10px;
+        }
+    }
+    .rotaxmax_left{
+        border-radius:15px 0 0 15px;
+            }
+    .rotaxmax_right{
+        border-radius:0 15px 15px 0;
+    }
+
+    
+}
