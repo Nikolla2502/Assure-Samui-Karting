@@ -412,14 +412,14 @@ footer figure figcaption {
 }
 
 .card-competition {
-  margin-top: 50vh;
+  margin-top: 16rem;
 }
 
 /*####################################*\
 ##########  Partie team         ########
 \*####################################*/
 .card-team {
-  margin-top: 50vh;
+  margin-top: 16rem;
 }
 
 .card-team-body {
@@ -528,8 +528,7 @@ footer figure figcaption {
 ##########  Fin Partie competition  ####
 \*####################################*/
 .card-team-page {
-  height: auto;
-  margin-top: 50vh;
+  margin-top: 16rem;
 }
 
 .team-list {
