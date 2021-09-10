@@ -176,8 +176,6 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: white;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
   border-radius: 15px;
   margin-top: 20px;
 }
@@ -185,8 +183,6 @@ h4 {
 .card-banner .rotaxmax {
   background-color: white;
   padding: 10px;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
 }
 
 .card-banner .rotaxmax img {

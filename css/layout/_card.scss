@@ -24,13 +24,13 @@
     display:flex;
     justify-content: space-between;
     background-color:white;
-    @include box-shadow-main;
+    // @include box-shadow-main;
     border-radius:15px;
     margin-top:20px;
     .rotaxmax{
     background-color:white;
     padding:10px;
-    @include box-shadow-main;
+    // @include box-shadow-main;
         img{
         border-radius:15px 0;
         @include box-shadow-main;
