@@ -38,7 +38,38 @@ header {
         text-shadow: 5px 5px 10px rgb(63, 63, 63);
     }
 } 
-
+// // toggle bouton
+// .btn-responsive {
+//     position: absolute;
+//     left: 20px;
+//     top:20px;
+//     padding: 5px;
+//     display: none; /* n'apparait pas sur grand ecran*/
+// }
+// @media screen and (max-width: 650px){
+//     .liste {
+//         flex-direction: column;
+//         position: relative;
+//         top: 70px;
+//         height: 210px;
+        
+//         display: none; /* la liste n'apparait pas  ecran < 650px */
+//     }
+//     .liste.show {
+//         display: block;
+//         /* width: 50%; */
+//     }
+//     .items {
+//         background: rgb(141, 141, 141);
+//         height: 70px;  /* 3x la height = height parent*/
+//         width: 30%;
+//         text-align: center;
+//         line-height: 70px;
+//     }
+//     .btn-responsive {
+//         display: block; /* apparait sur ecran < 650px */
+//     }
+// }
 .lang-choice{
     background-color: white;
     img{
@@ -59,13 +90,13 @@ header {
 
 h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     // color:rgb(247, 44, 44);
     text-shadow: 5px 5px 20px rgb(7, 7, 7);
     .first_letter{
-    color: #FCEA08;
-    font-size:3.5rem;
+    color: #fc0808;
+    font-size:4rem;
     
     }
    

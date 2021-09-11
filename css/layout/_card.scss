@@ -5,7 +5,7 @@
     background-color:$bg_color;
     // border-radius:25px;
     height: auto;
-    // @include box-shadow-main;
+    @include box-shadow-main;
     margin:0 2rem 0 2rem;
     padding-bottom:1rem;
     h2{
@@ -24,26 +24,36 @@
     display:flex;
     justify-content: space-between;
     background-color:white;
-    // @include box-shadow-main;
-    border-radius:15px;
+    @include box-shadow-main;
     margin-top:20px;
-    .rotaxmax{
-    background-color:white;
-    padding:10px;
-    // @include box-shadow-main;
+    .text-banner{
+        display: flex;
+        margin-left: 70px;
+    }
+    button {
+        margin: auto;
+        margin-left: 50px;
+        height: 30%;
+        font-weight: bold;
+        font-family: 'title';
+        border: solid 2px black;
+        border-radius: 5px;
+        background-color: #2b2b2b;
+        
+        @include box-shadow-main
+    }
+    a {
+        color: white;
+    }
+    .logo-banner{
+
         img{
-        border-radius:15px 0;
-        @include box-shadow-main;
+            border-radius: 15px 0 15px 0;
         height:100px;
         margin:10px;
         }
     }
-    .rotaxmax_left{
-        border-radius:15px 0 0 15px;
-            }
-    .rotaxmax_right{
-        border-radius:0 15px 15px 0;
-    }
+
 
     
 }
