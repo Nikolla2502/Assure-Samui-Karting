@@ -283,8 +283,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0px;
-  -webkit-box-shadow: 0px 0px 30px 30px white;
-          box-shadow: 0px 0px 30px 30px white;
+  -webkit-box-shadow: 0px 10px 20px 30px white;
+          box-shadow: 0px 10px 20px 30px white;
 }
 
 .header-nav {
@@ -328,8 +328,11 @@ header {
 
 .banner {
   background-image: url("/././media/ASK/Tecno_Track_Right_Resize.jpg");
-  background-size: cover;
-  margin-top: 70px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebeb;
+  margin-top: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +343,7 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 600px;
+  height: 30rem;
   padding: 2px 0;
 }
 
@@ -348,7 +351,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.6);
           box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.6);
-  padding: 0 5px;
+  padding: 0 135px;
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
