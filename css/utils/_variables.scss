@@ -8,3 +8,6 @@ $footer_color:rgb(212, 212, 212);
 @mixin border-main{
     border:solid 5px $border_color;
 }
+@mixin text-shadow {
+  text-shadow: 2px 2px 5px rgb(7, 7, 7);
+}

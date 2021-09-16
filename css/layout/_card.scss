@@ -5,15 +5,16 @@
     background-color:$bg_color;
     // border-radius:25px;
     height: auto;
-    @include box-shadow-main;
-    margin:0 2rem 0 2rem;
+    // @include box-shadow-main;
+    // margin:0 2rem 0 2rem;
     padding-bottom:1rem;
     h2{
         text-align: center;
         font-size:2.5rem;
         font-weight: bold;
         margin:auto;
-        text-shadow: 5px 5px 20px rgb(7, 7, 7);
+        @include text-shadow;
+        // text-shadow: 5px 5px 10px rgb(7, 7, 7);
     }
     
 
@@ -28,32 +29,73 @@
     margin-top:20px;
     .text-banner{
         display: flex;
-        margin-left: 70px;
+        margin-left: 230px;
     }
     button {
         margin: auto;
-        margin-left: 50px;
+        margin-left: 15rem;
         height: 30%;
         font-weight: bold;
         font-family: 'title';
         border: solid 2px black;
         border-radius: 5px;
         background-color: #2b2b2b;
-        
         @include box-shadow-main
     }
     a {
         color: white;
     }
-    .logo-banner{
-
+    .rotaxmax{
+        padding:10px;
         img{
-            border-radius: 15px 0 15px 0;
+            @include box-shadow-main;
+            border-radius:15px 0;
+            height:100px;
+            margin:10px;
+            }
+        }
+    .rotaxmax_left{
+        border-radius:25px 0 0;
+            }
+    .rotaxmax_right{
+        border-radius:0 25px 0 0;
+    }
+    .card_banner_logo{
+        img{
+        border-radius: 15px 0 15px 0;
         height:100px;
         margin:10px;
         }
-    }
-
-
     
+    }
 }
+
+.card-body{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin:20px;
+    figcaption{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        img{
+            height:2rem;
+            position: relative;
+            top:10px;
+            box-shadow:none;
+        }
+    }
+    p{
+        margin: auto;
+        font-size:1.5rem;
+        width:30%;
+        margin-left:2rem;
+    }
+}
+.card-body-part {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+

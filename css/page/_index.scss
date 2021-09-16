@@ -3,9 +3,7 @@
 /*####################################*\
 ##########  Partie team         ########
 \*####################################*/
-.card-team{
-    margin-top: 16rem;
-}
+
 
 .card-team-body{
     display:flex;
@@ -47,28 +45,8 @@
 
    
 }
- }
-.card-race-body{
-    display:flex;
-    justify-content: left;
-    margin:20px;
-    figcaption{
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.5rem;
-        img{
-            height:2rem;
-            position: relative;
-            top:10px;
-            box-shadow:none;
-        }
-    }
-    p{
-        font-size:1.5rem;
-        width:30%;
-        margin-left:2rem;
-    }
 }
+
 
 /*####################################*\
 ##########  Fin Partie competition  ####

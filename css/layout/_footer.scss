@@ -13,9 +13,11 @@ footer{
     a{
         text-decoration:none;
         color:rgb(41, 41, 41);
+        
         &:hover{
             color:black;
-            text-shadow:1px 1px 10px;
+            @include text-shadow;
+            
         }
     }
 }
