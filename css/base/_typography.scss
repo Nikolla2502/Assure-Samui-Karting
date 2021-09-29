@@ -1,13 +1,36 @@
 
 @font-face{
     font-family: 'title';
-    src:url('/././font/Superclarendon Regular.ttf')
+    src:url('./font/Superclarendon Regular.ttf')
 }
-.banner{
+.body{
     font-family: 'title';
    
 }
 
 h4{
     font-size:1.3rem;
+}
+
+// Typographie Banner Text 
+.card_banner_typo{
+   
+    font-weight: bold;
+    font-size:2.5rem;
+    @include cel {
+        font-size:1.5rem;
+    }
+    @include tablet {
+        font-size:2rem;
+    }
+
+}
+.card_body {
+    font-size:2rem;
+    @include cel {
+        font-size:1rem;
+    }
+    @include tablet {
+        font-size:1.5rem;
+    }
 }

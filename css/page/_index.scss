@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 .card-team-presentation{
-    font-size:2rem;
+
     margin-top:40px;
     padding:30px;
     
@@ -27,7 +27,13 @@
 ##########  Partie competition  ########
 \*####################################*/
 
-
+.card_body_competition {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 
 
 .rotaxmax-calendar img{
@@ -56,11 +62,16 @@
 ########## Partie partenaire        ####
 \*####################################*/
 
-
+#slider {
+    margin:auto;
+}
 .card-partenaires-body{
     display:flex;
     justify-content: space-evenly;
     margin-top:20px;
+    @include slide {
+        flex-direction: column;
+    }
 }
 .card-partenaires-list{
     margin-left:20px;

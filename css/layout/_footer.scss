@@ -1,11 +1,13 @@
 footer{
-    display:flex;
-    justify-content: space-around;
-    margin:5% 3%;
-    padding:20px 0;
+    // display:flex;
+    // justify-content: space-around;
+    
+    padding:1vh 0 2vh 5vh;
     background-color:$bg_color;
-    @include box-shadow-main;
-    // @include border-main;
+    // @include box-shadow-main;
+    @include border-main;
+    border-left: none;
+    border-right: none;
     // border-radius:20px;
     font-weight:bold;
     line-height: 1.5rem;

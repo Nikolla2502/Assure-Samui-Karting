@@ -58,29 +58,6 @@
   }
 }
 
-/* Ecrire les prorietes dans les selecteurs correspondants*/
-@media (max-width: 425px) {
-  /* pour la taille cel 425 px
-    /* proprietes CSS   */
-}
-
-@media all and (max-width: 768px) {
-  /* pour la taille tablet 768 px
-    /* proprietes CSS   */
-}
-
-@media (max-width: 1024px) {
-  /* proprietes CSS   */
-}
-
-@media (max-width: 1440px) {
-  /* proprietes CSS   */
-}
-
-@media (max-width: 2560px) {
-  /* proprietes CSS   */
-}
-
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -142,15 +119,48 @@ a {
 
 @font-face {
   font-family: 'title';
-  src: url("/././font/Superclarendon Regular.ttf");
+  src: url("./font/Superclarendon Regular.ttf");
 }
 
-.banner {
+.body {
   font-family: 'title';
 }
 
 h4 {
   font-size: 1.3rem;
+}
+
+.card_banner_typo {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 425px) {
+  .card_banner_typo {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .card_banner_typo {
+    font-size: 2rem;
+  }
+}
+
+.card_body {
+  font-size: 2rem;
+}
+
+@media (max-width: 425px) {
+  .card_body {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .card_body {
+    font-size: 1.5rem;
+  }
 }
 
 .card {
@@ -159,38 +169,81 @@ h4 {
   padding-bottom: 1rem;
 }
 
-.card h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: auto;
-  text-shadow: 2px 2px 5px #070707;
-}
-
-.card-banner {
+.card_banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-bottom: solid 2px black;
+  margin-left: 5px;
+}
+
+.card_banner .card_banner_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_banner .rotaxmax {
+  padding: 10px;
+}
+
+.card_banner .rotaxmax img {
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  border-radius: 15px 0;
+  height: 100px;
+  margin: 10px;
+}
+
+.card_banner .rotaxmax_left {
+  border-radius: 25px 0 0;
+}
+
+.card_banner .rotaxmax_right {
+  border-radius: 0 25px 0 0;
+}
+
+.card_banner .card_banner_logo img {
+  border-radius: 15px 0 15px 0;
+  height: 50px;
+  margin: 10px;
+}
+
+@media all and (max-width: 768px) {
+  .card_banner .card_banner_logo {
+    display: none;
+  }
+}
+
+.card_banner_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: white;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-  margin-top: 20px;
 }
 
-.card-banner .text-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 230px;
-}
-
-.card-banner button {
-  margin: auto;
-  margin-left: 15rem;
-  height: 30%;
+button {
+  margin-top: 1rem;
+  margin-left: 90%;
+  padding: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   font-weight: bold;
   font-family: 'title';
   border: solid 2px black;
@@ -200,34 +253,8 @@ h4 {
           box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
 }
 
-.card-banner a {
+button a {
   color: white;
-}
-
-.card-banner .rotaxmax {
-  padding: 10px;
-}
-
-.card-banner .rotaxmax img {
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-  border-radius: 15px 0;
-  height: 100px;
-  margin: 10px;
-}
-
-.card-banner .rotaxmax_left {
-  border-radius: 25px 0 0;
-}
-
-.card-banner .rotaxmax_right {
-  border-radius: 0 25px 0 0;
-}
-
-.card-banner .card_banner_logo img {
-  border-radius: 15px 0 15px 0;
-  height: 100px;
-  margin: 10px;
 }
 
 .card-body {
@@ -283,8 +310,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0px;
-  -webkit-box-shadow: 0px 10px 20px 30px white;
-          box-shadow: 0px 10px 20px 30px white;
+  -webkit-box-shadow: 0px 5px 20px 10px white;
+          box-shadow: 0px 5px 20px 10px white;
 }
 
 .header-nav {
@@ -295,7 +322,6 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: white;
-  height: 7vh;
 }
 
 .header-nav ul {
@@ -312,7 +338,7 @@ header {
   color: black;
   font-size: 1.5rem;
   font-weight: bold;
-  text-shadow: 5px 5px 10px #3f3f3f;
+  text-shadow: 2px 2px 5px #3f3f3f;
 }
 
 .lang-choice {
@@ -327,12 +353,7 @@ header {
 }
 
 .banner {
-  background-image: url("/././media/ASK/Tecno_Track_Right_Resize.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #ebebeb;
-  margin-top: 90px;
+  margin-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +364,6 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 30rem;
   padding: 2px 0;
 }
 
@@ -365,8 +385,6 @@ h1 .first_letter {
 
 .ask-presentation-complement {
   background-color: rgba(255, 255, 255, 0.6);
-  -webkit-box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.6);
-          box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,16 +412,11 @@ h1 .first_letter {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 5% 3%;
-  padding: 20px 0;
+  padding: 1vh 0 2vh 5vh;
   background-color: #ebebeb;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  border: solid 5px #505050;
+  border-left: none;
+  border-right: none;
   font-weight: bold;
   line-height: 1.5rem;
   font-size: 1.4rem;
@@ -493,7 +506,6 @@ footer figure figcaption {
 }
 
 .card-team-presentation {
-  font-size: 2rem;
   margin-top: 40px;
   padding: 30px;
 }
@@ -504,6 +516,18 @@ footer figure figcaption {
 /*####################################*\
 ##########  Partie competition  ########
 \*####################################*/
+@media all and (max-width: 768px) {
+  .card_body_competition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .rotaxmax-calendar img {
   height: 320px;
   -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
@@ -528,6 +552,10 @@ footer figure figcaption {
 /*####################################*\
 ########## Partie partenaire        ####
 \*####################################*/
+#slider {
+  margin: auto;
+}
+
 .card-partenaires-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,6 +564,15 @@ footer figure figcaption {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .card-partenaires-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .card-partenaires-list {
