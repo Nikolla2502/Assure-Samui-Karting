@@ -173,7 +173,7 @@ h1 .first_letter {
 
 @media (max-width: 425px) {
   .card_banner_typo {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
