@@ -11,8 +11,35 @@
 h4{
     font-size:1.3rem;
 }
-
-// Typographie Banner Text 
+// Typography ask_presentation
+h1{
+    background-color: rgba(255, 255, 255,0.6);
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 255,0.6);
+    padding: auto;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    @include text-shadow;
+    .first_letter{
+    color: #e20303;
+    font-size:4rem;
+    }
+    @include cel {
+        font-size: 2rem;
+        .first_letter{
+            color: #e20303;
+            font-size:2rem;
+            }
+    }
+    @include tablet {
+        font-size: 3rem;
+        .first_letter{
+            color: #e20303;
+            font-size:3rem;
+            }
+    }
+}
+// Typographie Card Banner Text 
 .card_banner_typo{
    
     font-weight: bold;
@@ -25,6 +52,8 @@ h4{
     }
 
 }
+
+// Typographie Card Body 
 .card_body {
     font-size:2rem;
     @include cel {

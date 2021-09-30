@@ -130,6 +130,42 @@ h4 {
   font-size: 1.3rem;
 }
 
+h1 {
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.6);
+  padding: auto;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #070707;
+}
+
+h1 .first_letter {
+  color: #e20303;
+  font-size: 4rem;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1 .first_letter {
+    color: #e20303;
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h1 .first_letter {
+    color: #e20303;
+    font-size: 3rem;
+  }
+}
+
 .card_banner_typo {
   font-weight: bold;
   font-size: 2.5rem;
@@ -367,23 +403,7 @@ header {
   padding: 2px 0;
 }
 
-h1 {
-  background-color: rgba(255, 255, 255, 0.6);
-  -webkit-box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.6);
-          box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.6);
-  padding: 0 135px;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px #070707;
-}
-
-h1 .first_letter {
-  color: #e20303;
-  font-size: 4rem;
-}
-
-.ask-presentation-complement {
+.ask_presentation-complement {
   background-color: rgba(255, 255, 255, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,16 +414,16 @@ h1 .first_letter {
 }
 
 @media all and (max-width: 768px) {
-  .ask-presentation-complement {
+  .ask_presentation-complement {
     display: none;
   }
 }
 
-.ask-presentation-complement .nation-flag img {
+.ask_presentation-complement .nation-flag img {
   height: 60px;
 }
 
-.ask-presentation-complement h2 {
+.ask_presentation-complement h2 {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -525,6 +545,12 @@ footer figure figcaption {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .card_body_competition p {
+    width: 80%;
   }
 }
 

@@ -80,21 +80,9 @@ header {
     padding:2px 0;
 }
 
-h1{
-    background-color: rgba(255, 255, 255,0.6);
-    box-shadow: 0px 0px 20px 20px rgba(255, 255, 255,0.6);
-    padding: 0 135px;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    @include text-shadow;
-    .first_letter{
-    color: #e20303;
-    font-size:4rem;
-    }
-}
 
-.ask-presentation-complement{
+
+.ask_presentation-complement{
     background-color: rgba(255, 255, 255,0.6);
     // box-shadow: 0px 0px 20px 20px rgba(255, 255, 255,0.6);
     display: flex;
