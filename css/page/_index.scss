@@ -34,16 +34,19 @@
     }
     p {
         @include tablet {
-            width:80%;
+            width:90%;
         }
     }
     
 }
 
 
-.rotaxmax-calendar img{
+.rotaxmax-calendar {
+    margin:auto;
+    img{
     height:320px;
     @include box-shadow-main;
+    }
 }
 
 .bira-track {   
@@ -51,6 +54,7 @@
         display: none;
         }
     img{
+        margin:auto;
     height:320px;
     @include box-shadow-main;
 

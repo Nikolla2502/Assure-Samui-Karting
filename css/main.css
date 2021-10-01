@@ -310,7 +310,9 @@ button a {
 .card-body figcaption {
   margin-top: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  border: solid 1px black;
+  background-color: white;
 }
 
 .card-body figcaption img {
@@ -323,6 +325,7 @@ button a {
 
 .card-body p {
   margin: auto;
+  margin-top: 3vh;
   font-size: 1.5rem;
   width: 30%;
   margin-left: 2rem;
@@ -386,6 +389,12 @@ header {
   height: 2rem;
   -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
           box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+@media (max-width: 425px) {
+  .lang-choice img {
+    height: 1rem;
+  }
 }
 
 .banner {
@@ -550,8 +559,12 @@ footer figure figcaption {
 
 @media all and (max-width: 768px) {
   .card_body_competition p {
-    width: 80%;
+    width: 90%;
   }
+}
+
+.rotaxmax-calendar {
+  margin: auto;
 }
 
 .rotaxmax-calendar img {
@@ -567,6 +580,7 @@ footer figure figcaption {
 }
 
 .bira-track img {
+  margin: auto;
   height: 320px;
   -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
           box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;

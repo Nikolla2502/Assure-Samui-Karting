@@ -68,6 +68,9 @@ header {
         margin-top:10px;
         height:2rem;
         @include box-shadow-main;
+        @include cel {
+            height: 1rem;
+        }
     }
 }
 
