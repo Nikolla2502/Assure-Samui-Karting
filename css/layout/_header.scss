@@ -6,22 +6,25 @@ header {
     box-shadow: 0px 5px 20px 10px white;
     
 }
-.header-nav {
+.header_nav {
     display: flex;
     justify-content:space-between;
     background-color: white;
 
     ul{
         margin-top:10px;
+        @include cel {
+            display:none;
+        }
     }
     li {
         display:inline;
-        margin:2rem;
+        margin:2vw;
         
     }
 }
 
-.card-lien-page{
+.header_nav_lien{
     a{
         text-decoration: none;
         color: rgb(0, 0, 0);
@@ -62,7 +65,7 @@ header {
 //         display: block; /* apparait sur ecran < 650px */
 //     }
 // }
-.lang-choice{
+.header_nav_lang_choice{
     background-color: white;
     img{
         margin-top:10px;
@@ -85,7 +88,7 @@ header {
 
 
 
-.ask_presentation-complement{
+.banner_ask_title_complement{
     background-color: rgba(255, 255, 255,0.6);
     // box-shadow: 0px 0px 20px 20px rgba(255, 255, 255,0.6);
     display: flex;

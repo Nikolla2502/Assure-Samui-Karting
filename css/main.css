@@ -58,6 +58,32 @@
   }
 }
 
+.d-flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.d-flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -183,18 +209,18 @@ h1 .first_letter {
   }
 }
 
-.card_body {
+.card_body_typo {
   font-size: 2rem;
 }
 
 @media (max-width: 425px) {
-  .card_body {
+  .card_body_typo {
     font-size: 1rem;
   }
 }
 
 @media all and (max-width: 768px) {
-  .card_body {
+  .card_body_typo {
     font-size: 1.5rem;
   }
 }
@@ -209,11 +235,10 @@ h1 .first_letter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: solid 2px black;
   margin-left: 5px;
 }
@@ -251,8 +276,8 @@ h1 .first_letter {
 
 .card_banner .card_banner_logo img {
   border-radius: 15px 0 15px 0;
-  height: 50px;
-  margin: 10px;
+  height: 8vh;
+  margin: 2vh;
 }
 
 @media all and (max-width: 768px) {
@@ -315,14 +340,6 @@ button a {
   background-color: white;
 }
 
-.card-body figcaption img {
-  height: 2rem;
-  position: relative;
-  top: 10px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .card-body p {
   margin: auto;
   margin-top: 3vh;
@@ -353,7 +370,7 @@ header {
           box-shadow: 0px 5px 20px 10px white;
 }
 
-.header-nav {
+.header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,16 +380,22 @@ header {
   background-color: white;
 }
 
-.header-nav ul {
+.header_nav ul {
   margin-top: 10px;
 }
 
-.header-nav li {
-  display: inline;
-  margin: 2rem;
+@media (max-width: 425px) {
+  .header_nav ul {
+    display: none;
+  }
 }
 
-.card-lien-page a {
+.header_nav li {
+  display: inline;
+  margin: 2vw;
+}
+
+.header_nav_lien a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
@@ -380,11 +403,11 @@ header {
   text-shadow: 2px 2px 5px #3f3f3f;
 }
 
-.lang-choice {
+.header_nav_lang_choice {
   background-color: white;
 }
 
-.lang-choice img {
+.header_nav_lang_choice img {
   margin-top: 10px;
   height: 2rem;
   -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
@@ -392,7 +415,7 @@ header {
 }
 
 @media (max-width: 425px) {
-  .lang-choice img {
+  .header_nav_lang_choice img {
     height: 1rem;
   }
 }
@@ -412,7 +435,7 @@ header {
   padding: 2px 0;
 }
 
-.ask_presentation-complement {
+.banner_ask_title_complement {
   background-color: rgba(255, 255, 255, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,16 +446,16 @@ header {
 }
 
 @media all and (max-width: 768px) {
-  .ask_presentation-complement {
+  .banner_ask_title_complement {
     display: none;
   }
 }
 
-.ask_presentation-complement .nation-flag img {
+.banner_ask_title_complement .nation-flag img {
   height: 60px;
 }
 
-.ask_presentation-complement h2 {
+.banner_ask_title_complement h2 {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -442,7 +465,7 @@ header {
 
 footer {
   padding: 1vh 0 2vh 5vh;
-  background-color: #ebebeb;
+  background-color: white;
   border: solid 5px #505050;
   border-left: none;
   border-right: none;
@@ -484,10 +507,6 @@ footer figure figcaption {
   margin-top: 15px;
 }
 
-.partenaires li {
-  margin-top: 10px;
-}
-
 #slider {
   height: 320px;
   width: 100%;
@@ -521,7 +540,7 @@ footer figure figcaption {
 /*####################################*\
 ##########  Partie team         ########
 \*####################################*/
-.card-team-body {
+.card_body_team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

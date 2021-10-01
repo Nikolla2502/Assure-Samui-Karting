@@ -14,12 +14,9 @@
 
 .card_banner{
     display:flex;
-    flex-direction: column;
-
     background-color:white;
-    // border-top:solid 2px black;
+    justify-content:space-between;
     border-bottom: solid 2px black;
-    // border-left: solid 5px black;
     margin-left:5px;
     .card_banner_text{
         display: flex;
@@ -45,8 +42,8 @@
     .card_banner_logo{
         img{
             border-radius: 15px 0 15px 0;
-            height:50px;
-            margin:10px;
+            height:8vh;
+            margin:2vh;
         }
         @include tablet {
             display: none;
@@ -61,14 +58,7 @@
     flex-direction: row;
     justify-content:space-between;
     }
-// .card_banner::before {
-//     content:"";
-//     display: block;
-//     background-color:black;
-//     height: 5px;
-//     width:20%;
 
-// }
 
 button {
     margin-top:1rem;
@@ -96,12 +86,7 @@ button {
         font-size: 1.3rem;
         border :solid 1px black;
         background-color: white;
-        img{
-            height:2rem;
-            position: relative;
-            top:10px;
-            box-shadow:none;
-        }
+        
     }
     p{
         margin: auto;
