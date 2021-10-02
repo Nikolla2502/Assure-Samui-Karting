@@ -1,11 +1,10 @@
-// const liste = document.querySelector('.liste');
-// const btnResponsive = document.querySelector('.btn-responsive');
+const menu = document.querySelector('.menu');
+const btnResponsive = document.querySelector('.header_icon');
 
-// btnResponsive.addEventListener('click', () => {
-//     liste.classList.toggle('show');
-// })
-// window.addEventListener('resize', () => {  // resize en format grand ecran pour reset
-//     if(window.innerWidth > 650) {
-//         liste.classList.remove('show');
-//     }
-// })
+btnResponsive.addEventListener('click', () => {
+    menu.style.transform = "translateX(0)";
+})
+
+menu.addEventListener('onscroll', () => {
+    menu.style.transform = "translateX(-250px)";
+})

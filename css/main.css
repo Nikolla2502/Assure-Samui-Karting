@@ -58,32 +58,6 @@
   }
 }
 
-.d-flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.d-flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -362,7 +336,6 @@ button a {
 }
 
 header {
-  z-index: 1;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -435,6 +408,12 @@ header {
   padding: 2px 0;
 }
 
+@media (max-width: 600px) {
+  .banner {
+    margin-top: 0;
+  }
+}
+
 .banner_ask_title_complement {
   background-color: rgba(255, 255, 255, 0.6);
   display: -webkit-box;
@@ -461,6 +440,83 @@ header {
   text-align: center;
   text-shadow: 2px 2px 5px #070707;
   margin: 8px;
+}
+
+.header_responsive {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 66px;
+  background-color: white;
+}
+
+.header_logo {
+  float: left;
+}
+
+.header_logo img {
+  height: 4vh;
+  margin: 2vh;
+}
+
+.menu {
+  float: left;
+}
+
+.menu a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  font-size: 1.6rem;
+  text-shadow: 2px 2px 5px #3f3f3f;
+}
+
+.header_icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header_responsive {
+    position: static;
+  }
+  .header_icon {
+    display: contents;
+    margin-left: 20px;
+    display: block;
+    float: left;
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .header_icon img {
+    height: 2rem;
+  }
+  .menu {
+    position: absolute;
+    left: 2vh;
+    top: 1vh;
+    bottom: 0;
+    background-color: white;
+    width: auto;
+    height: 5vh;
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+  .menu a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ebebeb;
+    border-bottom: solid 1px white;
+  }
 }
 
 footer {
@@ -680,7 +736,6 @@ footer figure figcaption {
 
 .team-list-part {
   width: 100%;
-  margin-bottom: 5%;
 }
 
 .team-list-part li {
@@ -691,13 +746,32 @@ footer figure figcaption {
 
 .team-list-part h3 {
   font-weight: bold;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  border-radius: 5px;
+  border: solid 1px black;
   text-align: center;
-  margin-right: 100px;
+  margin: 2vw;
   margin-bottom: 20px;
   padding: 15px;
+}
+
+.video {
+  margin-top: 2vh;
+}
+
+.video iframe {
+  margin: auto;
+  border: solid 2px #505050;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 600px) {
+  .video iframe {
+    width: 100%;
+    height: 315px;
+  }
 }
 
 .team-pictures {
@@ -705,6 +779,9 @@ footer figure figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -714,6 +791,10 @@ footer figure figcaption {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.team-pictures .team-picture-items {
+  margin: auto;
 }
 
 .team-pictures img {
@@ -727,6 +808,8 @@ footer figure figcaption {
 }
 
 .team-pictures figcaption {
+  width: 80%;
+  margin: auto;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
@@ -737,14 +820,10 @@ footer figure figcaption {
           box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
 }
 
-.video {
-  margin: 20px auto;
-}
-
-.video iframe {
-  border: solid 2px #505050;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+@media (max-width: 600px) {
+  .team-pictures figcaption {
+    font-size: 1rem;
+  }
 }
 
 .gallery-pictures {

@@ -21,7 +21,7 @@
 
 .team-list-part{
     width:100%;
-    margin-bottom:5%;
+
     li{
         line-height: 2rem;
         width:95%;
@@ -29,22 +29,44 @@
     }
     h3{
         font-weight: bold;
-        border-radius: 15px;
-        @include box-shadow-main;
+        border-radius: 5px;
+        // @include box-shadow-main;
+        border: solid 1px black;
         text-align: center;
-        margin-right:100px;
+        margin:2vw;
         margin-bottom:20px;
         padding:15px;
     }
 
 }
+.video{
+    margin-top:2vh;
+    
+    iframe{
+        margin: auto;
+        border:solid 2px $border_color;
+        @include box-shadow-main;
+        width: 560px;
+        height:315px; 
+        @include slide {
+            width: 100%;
+            height:315px;
+        }
+
+    }
+}
+
 .team-pictures{
     margin:20px;
     display:flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap:wrap;
-
+    .team-picture-items{
+        margin:auto;
+    }
+    
     img{
         height: 200px;
         display: block;
@@ -54,18 +76,16 @@
         @include box-shadow-main;
     }    
     figcaption{
+        width:80%;
+        margin:auto;
         text-align: center;
         font-size: 1.5rem;
+        @include slide {
+            font-size:1rem;
+        }
         font-weight: bold;
         padding: 5px;
         margin-bottom:20px;
-        border:solid 2px $border_color;
-        @include box-shadow-main;
-    }
-}
-.video{
-    margin:20px auto;
-    iframe{
         border:solid 2px $border_color;
         @include box-shadow-main;
     }

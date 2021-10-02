@@ -1,5 +1,5 @@
 header {
-    z-index:1;
+    // z-index:1;
     position:fixed;
     width:100%;
     top: 0px;
@@ -79,6 +79,9 @@ header {
 
 .banner{
     margin-top: 55px;
+    @include slide {
+        margin-top:0;
+    }
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -108,5 +111,82 @@ header {
     text-align: center;
     @include text-shadow;
     margin:8px;
+    }
+}
+.header_responsive{
+    position: fixed;
+    z-index:1;
+    left:0;
+    right:0;
+    height: 50px;
+    line-height: 66px;
+
+    background-color: white;
+}
+.header_logo {
+    float: left;
+    img{
+
+        height:4vh;
+        margin:2vh;
+    }
+    
+}
+.menu {
+    float: left;
+    a{
+        padding: 0 10px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+    }
+    a:hover{
+        font-size : 1.6rem;
+        text-shadow: 2px 2px 5px rgb(63, 63, 63);
+    }
+}
+.header_icon {
+    display:none;
+}
+@include slide {
+    .header_responsive {
+        position: static;
+
+    }
+    .header_icon {
+        display: contents;
+        // position: relative;
+        margin-left: 20px;;
+        display: block;
+        float: left;
+        width: 45px;
+        height: 50px;
+        cursor: pointer;
+        img {
+            height: 2rem;
+
+        }
+    }
+    .menu{
+        // display: none;
+        position: absolute;
+        left:2vh;
+        top:1vh;
+        bottom:0;
+        background-color: white;
+        width: auto;
+        height: 5vh;
+        transform:translateX(-250px);
+        a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: $bg_color;
+            border-bottom: solid 1px white;
+
+        }
     }
 }
