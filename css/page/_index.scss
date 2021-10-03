@@ -38,29 +38,30 @@
         }
     }
     
-}
-
-
-.rotaxmax-calendar {
-    margin:auto;
-    img{
-    height:320px;
-    @include box-shadow-main;
-    }
-}
-
-.bira-track {   
-     @include desktop{
-        display: none;
-        }
-    img{
+    .rotaxmax-calendar {
         margin:auto;
-    height:320px;
-    @include box-shadow-main;
+        img{
+        height:320px;
+        @include box-shadow-main;
+        }
+    }
+    
+    .bira-track {   
+         @include desktop{
+            display: none;
+            }
+        img{
+            margin:auto;
+        height:320px;
+        @include box-shadow-main;
+    
+       
+    }
+    }
 
-   
 }
-}
+
+
 
 
 /*####################################*\
@@ -72,18 +73,18 @@
 \*####################################*/
 
 #slider {
-    margin:auto;
+    margin:2rem;
 }
 .card-partenaires-body{
     display:flex;
-    justify-content: space-evenly;
+    justify-content:center;
     margin-top:20px;
     @include slide {
         flex-direction: column;
     }
 }
 .card-partenaires-list{
-    margin-left:20px;
+    text-align: center;
     li{
         margin:10px;
     }

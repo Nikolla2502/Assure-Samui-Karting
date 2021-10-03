@@ -1,0 +1,47 @@
+.rotaxmax-calendar img{
+    height:320px;
+    @include box-shadow-main;
+}
+
+.bira-track img{
+    
+    height:320px;
+    @include box-shadow-main;
+    
+}
+
+.card_body_race{
+    display:flex;
+    @include tablet {
+      flex-direction: column;  
+    }
+    justify-content: space-between;
+    margin:20px;
+    figcaption{
+        margin:auto;
+        width:80%;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        img{
+            height:2rem;
+            position: relative;
+            top:1vh;
+            box-shadow:none;
+        }
+    }
+    p{
+        font-size:1.5rem;
+        margin-left:2rem;
+        width:90%;
+        @include slide {
+            font-size: 1.5rem;  
+            width:80%;
+          }
+    }
+    figure {
+        margin:auto;
+        margin-top:2rem;
+        
+    }
+}
