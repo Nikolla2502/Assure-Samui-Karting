@@ -10,6 +10,9 @@
 
 h4{
     font-size:1.3rem;
+    @include tablet {
+        font-size: 1rem;;
+    }
 }
 // Typography banner_ask_title
 h1{
@@ -61,5 +64,17 @@ h1{
     }
     @include tablet {
         font-size:1.5rem;
+    }
+}
+figcaption {
+    @include box-shadow-main;
+    width:80%;
+    margin:auto;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    @include slide {
+        font-size:1rem;
     }
 }

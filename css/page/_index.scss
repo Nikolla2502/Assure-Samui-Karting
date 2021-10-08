@@ -73,7 +73,8 @@
 \*####################################*/
 
 #slider {
-    margin:2rem;
+    margin:auto;
+
 }
 .card-partenaires-body{
     display:flex;
@@ -86,11 +87,17 @@
 .card-partenaires-list{
     text-align: center;
     li{
-        margin:10px;
+        margin-right:20px;
     }
 }
 .partners{
     font-size:1.8rem;
+    @include slide {
+        font-size: 1.4rem;
+    }
+    @include cel {
+        font-size:1.2rem
+    }
     text-decoration:underline;
 }
 /*####################################*\

@@ -114,7 +114,12 @@ body {
 
 a {
   text-decoration: none;
+  color: #292929;
+}
+
+a:hover {
   color: black;
+  text-shadow: 2px 2px 5px #070707;
 }
 
 @font-face {
@@ -128,6 +133,12 @@ a {
 
 h4 {
   font-size: 1.3rem;
+}
+
+@media all and (max-width: 768px) {
+  h4 {
+    font-size: 1rem;
+  }
 }
 
 h1 {
@@ -199,6 +210,23 @@ h1 .first_letter {
   }
 }
 
+figcaption {
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+  width: 80%;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  figcaption {
+    font-size: 1rem;
+  }
+}
+
 .card {
   background-color: #ebebeb;
   height: auto;
@@ -214,15 +242,13 @@ h1 .first_letter {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: solid 2px black;
-  margin-left: 5px;
 }
 
 .card_banner .card_banner_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 1rem;
-  margin-top: 2rem;
+  margin-left: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -249,28 +275,16 @@ h1 .first_letter {
 }
 
 .card_banner .card_banner_logo img {
-  border-radius: 15px 0 15px 0;
   height: 8vh;
   margin: 2vh;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 @media all and (max-width: 768px) {
   .card_banner .card_banner_logo {
     display: none;
   }
-}
-
-.card_banner_inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 button {
@@ -292,7 +306,7 @@ button a {
   color: white;
 }
 
-.card-body {
+.card_body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +320,7 @@ button a {
   margin: 20px;
 }
 
-.card-body figcaption {
+.card_body figcaption {
   margin-top: 10px;
   text-align: center;
   font-size: 1.3rem;
@@ -314,7 +328,7 @@ button a {
   background-color: white;
 }
 
-.card-body p {
+.card_body p {
   margin: auto;
   margin-top: 3vh;
   font-size: 1.5rem;
@@ -322,7 +336,7 @@ button a {
   margin-left: 2rem;
 }
 
-.card-body-part {
+.card_body_part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +419,6 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 2px 0;
 }
 
 @media (max-width: 600px) {
@@ -526,23 +539,33 @@ footer {
   border-left: none;
   border-right: none;
   font-weight: bold;
-  line-height: 1.5rem;
+  line-height: 2rem;
   font-size: 1.4rem;
 }
 
-footer a {
-  text-decoration: none;
-  color: #292929;
+@media (max-width: 600px) {
+  footer {
+    font-size: 1.2rem;
+  }
 }
 
-footer a:hover {
-  color: black;
-  text-shadow: 2px 2px 5px #070707;
+@media (max-width: 425px) {
+  footer {
+    font-size: 1rem;
+  }
 }
 
 img {
   height: 25px;
   margin-right: 8px;
+}
+
+footer ul {
+  margin-top: 2vh;
+}
+
+footer ul li {
+  margin-top: 1vh;
 }
 
 footer figure {
@@ -553,14 +576,6 @@ footer figure {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-footer figure figcaption {
-  font-size: 1.3rem;
-}
-
-.contact li {
-  margin-top: 2vh;
 }
 
 #slider {
@@ -668,7 +683,7 @@ footer figure figcaption {
 ########## Partie partenaire        ####
 \*####################################*/
 #slider {
-  margin: 2rem;
+  margin: auto;
 }
 
 .card-partenaires-body {
@@ -695,12 +710,24 @@ footer figure figcaption {
 }
 
 .card-partenaires-list li {
-  margin: 10px;
+  margin-right: 20px;
 }
 
 .partners {
   font-size: 1.8rem;
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .partners {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .partners {
+    font-size: 1.2rem;
+  }
 }
 
 /*####################################*\
@@ -793,13 +820,29 @@ footer figure figcaption {
       flex-wrap: wrap;
 }
 
+@media (max-width: 600px) {
+  .team-pictures {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .team-pictures .team-picture-items {
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.team-pictures figure {
   margin: auto;
 }
 
 .team-pictures img {
   height: 200px;
-  display: block;
   margin: auto;
   margin-bottom: 10px;
   border: solid 2px #505050;
@@ -807,29 +850,19 @@ footer figure figcaption {
           box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
 }
 
-.team-pictures figcaption {
-  width: 80%;
+.rotaxmax-calendar {
   margin: auto;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 5px;
-  margin-bottom: 20px;
-  border: solid 2px #505050;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-}
-
-@media (max-width: 600px) {
-  .team-pictures figcaption {
-    font-size: 1rem;
-  }
 }
 
 .rotaxmax-calendar img {
+  margin: auto;
   height: 320px;
   -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
           box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.bira-track {
+  margin: auto;
 }
 
 .bira-track img {
@@ -848,8 +881,16 @@ footer figure figcaption {
   margin: 20px;
 }
 
+.card_body_race .card_body_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 @media all and (max-width: 768px) {
-  .card_body_race {
+  .card_body_race .card_body_part {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -861,8 +902,14 @@ footer figure figcaption {
   margin: auto;
   width: 80%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2rem;
+}
+
+@media (max-width: 600px) {
+  .card_body_race figcaption {
+    font-size: 1rem;
+  }
 }
 
 .card_body_race figcaption img {
@@ -876,12 +923,12 @@ footer figure figcaption {
 .card_body_race p {
   font-size: 1.5rem;
   margin-left: 2rem;
-  width: 90%;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
   .card_body_race p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 80%;
   }
 }
@@ -889,40 +936,5 @@ footer figure figcaption {
 .card_body_race figure {
   margin: auto;
   margin-top: 2rem;
-}
-
-.gallery-pictures {
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.gallery-pictures img {
-  padding: auto;
-  height: 400px;
-  margin: 10px;
-  border: solid 2px #505050;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-}
-
-.gallery-pictures figcaption {
-  text-align: center;
-  font-size: 2rem;
-  line-height: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  border: solid 2px #505050;
-  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
-          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
 }
 /*# sourceMappingURL=main.css.map */

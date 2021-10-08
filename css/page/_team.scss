@@ -61,32 +61,26 @@
     display:flex;
     align-items: center;
     flex-direction: row;
+    @include slide {
+        flex-direction: column;
+        justify-content: center;
+    }
     justify-content: space-between;
     flex-wrap:wrap;
     .team-picture-items{
         margin:auto;
+        margin-top:1rem;
     }
-    
+    figure {
+        margin:auto;
+    }
     img{
         height: 200px;
-        display: block;
         margin:auto;
+        
         margin-bottom: 10px;
         border: solid 2px $border_color;
         @include box-shadow-main;
     }    
-    figcaption{
-        width:80%;
-        margin:auto;
-        text-align: center;
-        font-size: 1.5rem;
-        @include slide {
-            font-size:1rem;
-        }
-        font-weight: bold;
-        padding: 5px;
-        margin-bottom:20px;
-        border:solid 2px $border_color;
-        @include box-shadow-main;
-    }
+
 }

@@ -1,27 +1,43 @@
-.rotaxmax-calendar img{
+.rotaxmax-calendar {
+    margin:auto;
+    img{
+    margin: auto;
     height:320px;
     @include box-shadow-main;
+}
 }
 
-.bira-track img{
-    
+.bira-track {    
+    margin:auto;
+    img{
     height:320px;
     @include box-shadow-main;
     
 }
+}
+
 
 .card_body_race{
     display:flex;
+    .card_body_part{
+        display: flex;
+        justify-content: space-around;
     @include tablet {
       flex-direction: column;  
     }
+    }
     justify-content: space-between;
     margin:20px;
+
     figcaption{
         margin:auto;
+        
         width:80%;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        @include slide {
+            font-size: 1rem; 
+        }
         line-height: 2rem;
         img{
             height:2rem;
@@ -33,9 +49,9 @@
     p{
         font-size:1.5rem;
         margin-left:2rem;
-        width:90%;
+        width:100%;
         @include slide {
-            font-size: 1.5rem;  
+            font-size: 1.2rem;  
             width:80%;
           }
     }
