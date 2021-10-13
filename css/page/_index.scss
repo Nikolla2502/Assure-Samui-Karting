@@ -90,16 +90,7 @@
         margin-right:20px;
     }
 }
-.partners{
-    font-size:1.8rem;
-    @include slide {
-        font-size: 1.4rem;
-    }
-    @include cel {
-        font-size:1.2rem
-    }
-    text-decoration:underline;
-}
+
 /*####################################*\
 ##########  Fin Partie competition  ####
 \*####################################*/

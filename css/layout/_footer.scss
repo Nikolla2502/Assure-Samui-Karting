@@ -12,6 +12,7 @@ footer{
     }
     @include cel {
         font-size: 1rem;
+        padding: 0;
     }
 }
 img{
@@ -21,8 +22,16 @@ img{
 footer{
     ul{
         margin-top:2vh;
-        li {
-            margin-top:1vh
+        display: flex;
+        flex-direction: column;
+        @include slide {
+            margin-top:1vh;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        @include cel {
+            margin-top:1vh;
+
         }
     }
     figure{

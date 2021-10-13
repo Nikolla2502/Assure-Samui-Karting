@@ -227,6 +227,24 @@ figcaption {
   }
 }
 
+.partners_typo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .partners_typo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .partners_typo {
+    font-size: 1.2rem;
+  }
+}
+
 .card {
   background-color: #ebebeb;
   height: auto;
@@ -552,6 +570,7 @@ footer {
 @media (max-width: 425px) {
   footer {
     font-size: 1rem;
+    padding: 0;
   }
 }
 
@@ -562,10 +581,31 @@ img {
 
 footer ul {
   margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-footer ul li {
-  margin-top: 1vh;
+@media (max-width: 600px) {
+  footer ul {
+    margin-top: 1vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 425px) {
+  footer ul {
+    margin-top: 1vh;
+  }
 }
 
 footer figure {
@@ -711,23 +751,6 @@ footer figure {
 
 .card-partenaires-list li {
   margin-right: 20px;
-}
-
-.partners {
-  font-size: 1.8rem;
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .partners {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 425px) {
-  .partners {
-    font-size: 1.2rem;
-  }
 }
 
 /*####################################*\
@@ -936,5 +959,40 @@ footer figure {
 .card_body_race figure {
   margin: auto;
   margin-top: 2rem;
+}
+
+.gallery-pictures {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery-pictures img {
+  padding: auto;
+  height: 400px;
+  margin: 10px;
+  border: solid 2px #505050;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+}
+
+.gallery-pictures figcaption {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: solid 2px #505050;
+  -webkit-box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
+          box-shadow: 0 5px 15px #505050, inset 0 5px 15px #505050;
 }
 /*# sourceMappingURL=main.css.map */
