@@ -300,8 +300,8 @@ figcaption {
 }
 
 @media all and (max-width: 768px) {
-  .card_banner .card_banner_logo {
-    display: none;
+  .card_banner .card_banner_logo img {
+    height: 6vh;
   }
 }
 
@@ -442,6 +442,7 @@ header {
 @media (max-width: 600px) {
   .banner {
     margin-top: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -478,8 +479,7 @@ header {
   z-index: 1;
   left: 0;
   right: 0;
-  height: 50px;
-  line-height: 66px;
+  line-height: 40px;
   background-color: white;
 }
 
@@ -525,6 +525,7 @@ header {
     width: 45px;
     height: 50px;
     cursor: pointer;
+    margin-top: 1rem;
   }
   .header_icon img {
     height: 2rem;
