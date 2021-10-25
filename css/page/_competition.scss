@@ -15,7 +15,24 @@
     
 }
 }
-
+.figcaption_comments {
+    margin:auto;
+    border: none;  
+    box-shadow: none;  
+    width:80%;
+    text-align: center;
+    font-size: 1.3rem;
+    @include slide {
+        font-size: 1rem; 
+    }
+    line-height: 2rem;
+    img{
+        height:2rem;
+        position: relative;
+        top:1vh;
+        box-shadow:none;
+    }
+}
 
 .card_body_race{
     display:flex;
