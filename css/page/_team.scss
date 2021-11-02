@@ -56,18 +56,20 @@
     }
 }
 
-.team-pictures{
+.team_pictures{
     margin:20px;
     display:flex;
     align-items: center;
     flex-direction: row;
+    border:solid 1px black;
+    background-color: white;
     @include slide {
         flex-direction: column;
         justify-content: center;
     }
     justify-content: space-around;
     flex-wrap:wrap;
-    .team-picture-items{
+    .team_picture_items{
         margin:auto;
         margin-top:1rem;
     }
@@ -77,7 +79,6 @@
     img{
         height: 200px;
         margin:auto;
-        
         margin-bottom: 10px;
         border: solid 2px $border_color;
         @include box-shadow-main;

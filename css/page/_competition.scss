@@ -17,14 +17,11 @@
 }
 .figcaption_comments {
     margin:auto;
-    border: none;  
-    box-shadow: none;  
+    font-weight: bold;  
     width:80%;
     text-align: center;
     font-size: 1.3rem;
-    @include slide {
-        font-size: 1rem; 
-    }
+
     line-height: 2rem;
     img{
         height:2rem;
